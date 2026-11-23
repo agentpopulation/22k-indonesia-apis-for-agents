@@ -1,0 +1,637 @@
+{
+  "pack": "22k-indonesia-apis-for-agents",
+  "title": "Indonesia API endpoints",
+  "snapshot": "2026-11-16",
+  "tested": {
+    "min": "2026-11-16",
+    "max": "2026-11-16",
+    "text": "16 Nov 2026"
+  },
+  "note": "On the date in last_tested (IST), one GET to the URL, sent with no key, returned HTTP 2xx and a non-empty data body. HTML pages and empty results did not pass. The format column records what came back. This is a test result for that date, not a promise that the URL answers today. Licences, terms, rate limits, accuracy and freshness were not reviewed. Endpoints are URLs, not separate APIs; many share one service.",
+  "licence": "CC BY 4.0: credit AgentPopulation and link https://agentpopulation.com",
+  "focus": "NOT title matches /(?<![a-z])(test|tests|testing|draft|drafts|copy|sample|samples|demo|untitled|scratch|temp|tmp|delete|deleteme|practice|dummy|example|training)(?![a-z])|final_final|\\d{7,}/i",
+  "buckets": [
+    {
+      "id": "agent",
+      "name": "Agent tools",
+      "title": "Keyless JSON layers and tables an agent can call (Indonesia)",
+      "filter": "tags has agent-ready",
+      "endpoints": 22516,
+      "notes": [
+        "924 of these are map-layer queries that asked for a few records (resultRecordCount); add a where clause or a geometry to ask about one place, and page through for the whole layer."
+      ],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and are tagged agent-ready (no key sent in the test call, JSON body, passed a data call). Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: url matches //query\\?/i. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Portal Data Lamongan",
+          "display": "Portal Data Lamongan",
+          "host": "data.lamongankab.go.id",
+          "endpoints_in_bucket": 21592,
+          "endpoints_in_pack": 21592,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://data.lamongankab.go.id/dataset/000530db-f7eb-4dc3-a187-ad77f6f025af/resource/1d59eceb-5db9-4033-9bd3-4f09ff4ce3e9/download/data_statistik.json",
+          "sample_title": "Bantuan Hukum - Periode Juni 2023 - Data JSON Juni 2023",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Conservation International (ArcGIS Online)",
+          "display": "Conservation International (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/AOI_Survey_Biodiversity/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "AOI Survey Biodiversity",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Hub Community (ArcGIS Online)",
+          "display": "Hub Community (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/1v1brwt6r4ooA9mb/ArcGIS/rest/services/AH_Boundary/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "AH_Boundary",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "display": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 35,
+          "endpoints_in_pack": 35,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/t1SiaMcpdmU5aHVK/ArcGIS/rest/services/2024_Swim_Guide_Working_Data___tributariesGIS/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "2024_Swim_Guide_Working_Data___tributariesGIS",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Tiger Team (ArcGIS Online)",
+          "display": "Tiger Team (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 25,
+          "endpoints_in_pack": 25,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/mpSDBlkEzjS62WgX/arcgis/rest/services/Agrinas_HGU_WFL1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Agrinas_HGU_WFL1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "display": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 11,
+          "endpoints_in_pack": 11,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/UumfQ6GRw4Re8PJZ/arcgis/rest/services/GD_IKN_UPDATE/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "GD IKN UPDATE",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Geonet Infomedia (ArcGIS Online)",
+          "display": "Geonet Infomedia (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/hdfh5OsOlUgKLttT/arcgis/rest/services/Batas_Administrasi/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Batas Administrasi",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Good Forest Indonesia (ArcGIS Online)",
+          "display": "Good Forest Indonesia (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/Qkfnoxl9DbwkzQ25/ArcGIS/rest/services/Applied_Nucleation/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Applied_Nucleation",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "app",
+      "name": "App features",
+      "title": "Tables and layers to show in an app (Indonesia)",
+      "filter": "the whole pack",
+      "endpoints": 22516,
+      "notes": [],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Portal Data Lamongan",
+          "display": "Portal Data Lamongan",
+          "host": "data.lamongankab.go.id",
+          "endpoints_in_bucket": 21592,
+          "endpoints_in_pack": 21592,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://data.lamongankab.go.id/dataset/000530db-f7eb-4dc3-a187-ad77f6f025af/resource/1d59eceb-5db9-4033-9bd3-4f09ff4ce3e9/download/data_statistik.json",
+          "sample_title": "Bantuan Hukum - Periode Juni 2023 - Data JSON Juni 2023",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Conservation International (ArcGIS Online)",
+          "display": "Conservation International (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/AOI_Survey_Biodiversity/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "AOI Survey Biodiversity",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Hub Community (ArcGIS Online)",
+          "display": "Hub Community (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/1v1brwt6r4ooA9mb/ArcGIS/rest/services/AH_Boundary/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "AH_Boundary",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "display": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 35,
+          "endpoints_in_pack": 35,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/t1SiaMcpdmU5aHVK/ArcGIS/rest/services/2024_Swim_Guide_Working_Data___tributariesGIS/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "2024_Swim_Guide_Working_Data___tributariesGIS",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Tiger Team (ArcGIS Online)",
+          "display": "Tiger Team (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 25,
+          "endpoints_in_pack": 25,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/mpSDBlkEzjS62WgX/arcgis/rest/services/Agrinas_HGU_WFL1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Agrinas_HGU_WFL1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "display": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 11,
+          "endpoints_in_pack": 11,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/UumfQ6GRw4Re8PJZ/arcgis/rest/services/GD_IKN_UPDATE/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "GD IKN UPDATE",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Geonet Infomedia (ArcGIS Online)",
+          "display": "Geonet Infomedia (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/hdfh5OsOlUgKLttT/arcgis/rest/services/Batas_Administrasi/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Batas Administrasi",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Good Forest Indonesia (ArcGIS Online)",
+          "display": "Good Forest Indonesia (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/Qkfnoxl9DbwkzQ25/ArcGIS/rest/services/Applied_Nucleation/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Applied_Nucleation",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "grounding",
+      "name": "Grounding and data pipelines",
+      "title": "Regency statistics tables for scheduled loads (Indonesia)",
+      "filter": "the whole pack",
+      "endpoints": 22516,
+      "notes": [],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Portal Data Lamongan",
+          "display": "Portal Data Lamongan",
+          "host": "data.lamongankab.go.id",
+          "endpoints_in_bucket": 21592,
+          "endpoints_in_pack": 21592,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://data.lamongankab.go.id/dataset/000530db-f7eb-4dc3-a187-ad77f6f025af/resource/1d59eceb-5db9-4033-9bd3-4f09ff4ce3e9/download/data_statistik.json",
+          "sample_title": "Bantuan Hukum - Periode Juni 2023 - Data JSON Juni 2023",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Conservation International (ArcGIS Online)",
+          "display": "Conservation International (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/AOI_Survey_Biodiversity/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "AOI Survey Biodiversity",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Hub Community (ArcGIS Online)",
+          "display": "Hub Community (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/1v1brwt6r4ooA9mb/ArcGIS/rest/services/AH_Boundary/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "AH_Boundary",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "display": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 35,
+          "endpoints_in_pack": 35,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/t1SiaMcpdmU5aHVK/ArcGIS/rest/services/2024_Swim_Guide_Working_Data___tributariesGIS/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "2024_Swim_Guide_Working_Data___tributariesGIS",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Tiger Team (ArcGIS Online)",
+          "display": "Tiger Team (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 25,
+          "endpoints_in_pack": 25,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/mpSDBlkEzjS62WgX/arcgis/rest/services/Agrinas_HGU_WFL1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Agrinas_HGU_WFL1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "display": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 11,
+          "endpoints_in_pack": 11,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/UumfQ6GRw4Re8PJZ/arcgis/rest/services/GD_IKN_UPDATE/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "GD IKN UPDATE",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Geonet Infomedia (ArcGIS Online)",
+          "display": "Geonet Infomedia (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/hdfh5OsOlUgKLttT/arcgis/rest/services/Batas_Administrasi/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Batas Administrasi",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Good Forest Indonesia (ArcGIS Online)",
+          "display": "Good Forest Indonesia (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/Qkfnoxl9DbwkzQ25/ArcGIS/rest/services/Applied_Nucleation/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Applied_Nucleation",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "evals",
+      "name": "Evals and testing",
+      "title": "Varied responses to test tool calls and parsers",
+      "filter": "the whole pack",
+      "endpoints": 22516,
+      "notes": [],
+      "criteria": "Services in this pack that returned the most different formats, then the most endpoints that passed a data call, then by name: a mix of response shapes to test parsers and tool calls. Here the services returned 1 format each, so the order comes down to endpoint counts. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Portal Data Lamongan",
+          "display": "Portal Data Lamongan",
+          "host": "data.lamongankab.go.id",
+          "endpoints_in_bucket": 21592,
+          "endpoints_in_pack": 21592,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://data.lamongankab.go.id/dataset/000530db-f7eb-4dc3-a187-ad77f6f025af/resource/1d59eceb-5db9-4033-9bd3-4f09ff4ce3e9/download/data_statistik.json",
+          "sample_title": "Bantuan Hukum - Periode Juni 2023 - Data JSON Juni 2023",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Conservation International (ArcGIS Online)",
+          "display": "Conservation International (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/AOI_Survey_Biodiversity/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "AOI Survey Biodiversity",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Hub Community (ArcGIS Online)",
+          "display": "Hub Community (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 51,
+          "endpoints_in_pack": 51,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/1v1brwt6r4ooA9mb/ArcGIS/rest/services/AH_Boundary/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "AH_Boundary",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "display": "Three Rivers Waterkeeper (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 35,
+          "endpoints_in_pack": 35,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/t1SiaMcpdmU5aHVK/ArcGIS/rest/services/2024_Swim_Guide_Working_Data___tributariesGIS/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "2024_Swim_Guide_Working_Data___tributariesGIS",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Tiger Team (ArcGIS Online)",
+          "display": "Tiger Team (ArcGIS Online)",
+          "host": "services8.arcgis.com",
+          "endpoints_in_bucket": 25,
+          "endpoints_in_pack": 25,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services8.arcgis.com/mpSDBlkEzjS62WgX/arcgis/rest/services/Agrinas_HGU_WFL1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Agrinas_HGU_WFL1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "display": "PT GEOJAYA TEHNIK (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 11,
+          "endpoints_in_pack": 11,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/UumfQ6GRw4Re8PJZ/arcgis/rest/services/GD_IKN_UPDATE/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "GD IKN UPDATE",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Geonet Infomedia (ArcGIS Online)",
+          "display": "Geonet Infomedia (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/hdfh5OsOlUgKLttT/arcgis/rest/services/Batas_Administrasi/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Batas Administrasi",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Good Forest Indonesia (ArcGIS Online)",
+          "display": "Good Forest Indonesia (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 5,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "ID"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/Qkfnoxl9DbwkzQ25/ArcGIS/rest/services/Applied_Nucleation/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Applied_Nucleation",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    }
+  ]
+}
